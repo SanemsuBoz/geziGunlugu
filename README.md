@@ -1,6 +1,6 @@
 # gezi_gunluk
 
-A new Flutter project.
+Flutter project for internship.
 
 ## Getting Started
 
