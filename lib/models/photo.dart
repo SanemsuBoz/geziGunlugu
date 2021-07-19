@@ -17,9 +17,7 @@ class Photo {
   Map<String, dynamic> toMap() {
     var map = Map<String, dynamic>();
     map["photoName"] = _photoName;
-    if (_id != null) {
-      map["id"] = _id;
-    }
+    map["id"] = _id;
     return map;
   }
 

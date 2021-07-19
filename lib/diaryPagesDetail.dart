@@ -4,6 +4,7 @@ import 'db/dbHelper.dart';
 import 'models/diaryPagesInformation.dart';
 import 'myTravelDiary.dart';
 
+// ignore: must_be_immutable
 class DiaryPagesDetail extends StatefulWidget {
   DiaryPagesInformation diaryPagesInformation;
   DiaryPagesDetail(this.diaryPagesInformation);

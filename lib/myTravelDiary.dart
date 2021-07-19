@@ -22,10 +22,8 @@ class _MyTravelDiaryState extends State<MyTravelDiary> {
 
   @override
   Widget build(BuildContext context) {
-    if (diaryPagesInformation == null) {
-      diaryPagesInformation = [];
-      getData();
-    }
+    diaryPagesInformation = [];
+    getData();
 
     return Scaffold(
       appBar: AppBar(
@@ -99,10 +97,8 @@ class _MyTravelDiaryState extends State<MyTravelDiary> {
         context,
         MaterialPageRoute(
             builder: (context) => DiaryPagesDetail(diaryPagesInformation)));
-    if (result != null) {
-      if (result) {
-        getData();
-      }
+    if (result) {
+      getData();
     }
   }
 
@@ -111,19 +107,15 @@ class _MyTravelDiaryState extends State<MyTravelDiary> {
       case Choice.CreatePage:
         bool result = await Navigator.push(
             context, MaterialPageRoute(builder: (context) => DiaryPages()));
-        if (result != null) {
-          if (result) {
-            getData();
-          }
+        if (result) {
+          getData();
         }
         break;
       case Choice.Album:
         bool result = await Navigator.push(
             context, MaterialPageRoute(builder: (context) => Albums()));
-        if (result != null) {
-          if (result) {
-            getData();
-          }
+        if (result) {
+          getData();
         }
         break;
       default:

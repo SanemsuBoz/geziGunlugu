@@ -36,9 +36,8 @@ class DiaryPagesInformation {
     map["placeName"] = _placeName;
     map["explanation"] = _explanation;
     map["date"] = _date;
-    if (_id != null) {
-      map["id"] = _id;
-    }
+    map["id"] = _id;
+
     return map;
   }
 

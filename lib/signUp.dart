@@ -59,7 +59,7 @@ class _SignUpState extends State<SignUp> {
             width: 250,
             decoration: BoxDecoration(
                 color: Colors.blue, borderRadius: BorderRadius.circular(20)),
-            child: FlatButton(
+            child: TextButton(
               onPressed: () {
                 save();
               },

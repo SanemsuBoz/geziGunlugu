@@ -62,7 +62,7 @@ class _SignInState extends State<SignIn> {
               width: 250,
               decoration: BoxDecoration(
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
-              child: FlatButton(
+              child: TextButton(
                 onPressed: () {
                   entered();
                 },
@@ -78,7 +78,7 @@ class _SignInState extends State<SignIn> {
               width: 250,
               decoration: BoxDecoration(
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
-              child: FlatButton(
+              child: TextButton(
                 onPressed: () {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (_) => SignUp()));
